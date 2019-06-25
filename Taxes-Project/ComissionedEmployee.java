@@ -1,15 +1,13 @@
 public class ComissionedEmployee extends Employee implements Tax{
     protected double comission;
  
-    
     boolean isNilaiValid(double nilai){
         if(nilai>=0){
             return true;
         }
         return false;
     }
-    
-    
+       
     public void setComission(double comission){
         if(isNilaiValid(comission)){
             this.comission = comission;
